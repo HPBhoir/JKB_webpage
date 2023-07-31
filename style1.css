@@ -28,10 +28,15 @@ body {
     margin-right: 80px;
 }
 
+.bg_color {
+    background: #0f171c;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
 .icon {
     width: 20px;
-    border-radius: 20px;
-    margin-right: 10px;
+    margin: 10px;
 }
 
 .navbar-right {
@@ -48,21 +53,36 @@ body {
 
 /* NAVBAR */
 
-
+.icon_new {
+    width: 20px;
+    /* border-radius: 20px; */
+    margin-right: 10px;
+}
 
 .container {
     margin-top: 70px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 40px 0;
     display: flex;
-    background-color: hsl(28, 69%, 50%);
+    background-color: #E67F22;
 
 }
 
 .left-container {
     flex: 1;
-    background-color: hsl(28, 74%, 55%);
+    /* background-color: #e98f41; */
     margin-left: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+
+}
+
+.mac_img {
+    width: 100%;
+    /* height: 100%; */
 }
 
 /* .left-container video {
@@ -79,20 +99,23 @@ body {
 
 .ENGG {
     font-size: 40px;
+    margin-bottom: 10px;
 }
 
 .para {
-    padding-left: 30px;
-    font-size: 12px;
+    padding: 3px 0 3px 30px;
+    font-size: 14px;
 }
 
-.three_list {
-    padding-left: 30px;
+.three_three {
+    margin: 20px 0 0 0;
+    padding: 15px 0 1px 30px;
+    font-size: 14px;
 }
 
 .enroll_button {
 
-    color: hsl(28, 69%, 50%);
+    color: #E67F22;
     background-color: white;
     width: 180px;
     height: 40px;
@@ -100,83 +123,97 @@ body {
     border-radius: 20px;
     font-size: 20px;
     float: right;
-
-
+    margin: 50px 20px 0 0;
 }
-.pred{
+
+.enroll_button:hover {
+    background-color: rgb(232, 232, 232);
+}
+
+.pred {
     color: white;
     background: rgb(0, 0, 0);
-    height: 80px;
+    height: 120px;
     display: flex;
     /* text-align: center; */
     align-items: center;
     font-size: 30px;
-    justify-content: center; 
-    
+    justify-content: center;
+
 }
+
 .pred_button {
     margin-left: 30px;
     color: white;
-    background-color: hsl(28, 69%, 50%);
+    background-color: #e67f22;
     width: 200px;
     height: 40px;
     border: none;
     border-radius: 20px;
     font-size: 20px;
-   
-
-
 }
 
+.pred_button:hover {
+    background-color: #d4741f;
+}
 
 .four_boxs {
+    /* flex-direction: column; */
     display: flex;
     height: 250px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    /* flex: 1;  */
-
 }
 
 .first_3 {
-    /* color: white;
+    color: white;
     width: 55%;
-    margin: 0 10px; */
-    height: 250px;
+    margin: 0 10px;
     display: flex;
 
 }
 
-.three_img {
-    height: 250px;
-    width: 210px;
+
+.flex-box-fu {
+    display: flex;
+    flex-direction: column;
+    background-color: #17242B;
+    flex: 1;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+
 }
 
-.flex-box {
-    flex: 1;
-    border-radius: 25px;
-
+.increment_no {
+    margin: 10px 0;
+    font-size: 23px;
+    color: #E67F22;
 }
 
 .last_1 {
-    height: 250px;
-    /* width: 30%; */
+    width: 45%;
     color: white;
     padding: 5px 10px;
-    background-color: rgb(17, 31, 45);
+    background-color: #17242B;
     border-radius: 10px;
-    flex: 1;
     margin-right: 10px;
-    /* height: 100px; */
 }
 
 .box_4_head {
     color: #f18a4e;
+    height: 20%;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
-.para1 {
+.para_two {
     font-size: 14px;
     color: white;
+}
+
+#para-contain {
+    height: 70%;
+    overflow-y: scroll;
 }
 
 .Testimonials {
@@ -194,6 +231,7 @@ body {
 }
 
 .flex-box {
+    flex: 1;
     /* flex: 0 0 calc(33.33% - 20px); */
     margin: 10px;
 }
@@ -209,3 +247,266 @@ body {
     color: white;
     text-align: center;
 }
+
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    /* position: relative; */
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #17242B;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    /* padding: 12px 16px; */
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgb(46, 70, 83);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+
+
+
+
+.ENGG_hidden {
+    color: white;
+    display: none;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.JKB_top {
+    color: white;
+    display: none;
+
+}
+
+.right-container_hidden {
+    display: none;
+}
+
+.div_enroll_button_hidden {
+    margin: 30px 0;
+    display: none;
+}
+
+.enroll_button_hidden {
+    color: #E67F22;
+    background-color: rgb(246, 246, 246);
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    /* margin: 20px 20px 0 0; */
+}
+
+.last_1_hiden {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        display: none;
+    }
+
+    .JKB_top {
+        display: block;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+
+    .right-container {
+        display: none;
+    }
+
+    .left-container {
+        flex-basis: 100%;
+    }
+
+    .ENGG_hidden {
+        display: none;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .right-container_hidden {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        display: block;
+    }
+
+    .para {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .three_three {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ENGG {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .enroll_button {
+        display: none;
+    }
+
+    .div_enroll_button_hidden {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left-container {
+        /* flex: 1; */
+        /* background-color: #e98f41; */
+        margin-left: 0;
+    }
+
+    .last_1 {
+        display: none;
+    }
+
+    .first_3 {
+        flex-basis: 100%;
+    }
+
+    .last_1_hiden {
+        color: white;
+        padding: 5px 10px;
+        background-color: #17242B;
+        border-radius: 10px;
+        margin:30px 10px 0px 10px;
+        display: block;
+    }
+
+    .box_4_head {
+        color: #f18a4e;
+        height: 20%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .para {
+        font-size: 14px;
+        color: white;
+    }
+
+    .flex-box {
+        /* flex: 1; */
+        flex: 0 0 calc(33.33% - 20px);
+        margin: 10px;
+    }
+
+}
+
+
+
+@media (max-width: 540px) {
+
+.ENGG{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.para {
+    padding: 3px 0 3px 30px;
+    font-size: 14px;
+}
+
+.three_three {
+    margin: 20px 0 0 0;
+    padding: 15px 0 1px 30px;
+    font-size: 14px;
+}
+}
+
+
+@media (max-width: 420px) {
+    .para {
+        padding: 3px 0 3px 30px;
+        font-size: 12px;
+    }
+    
+    .three_three {
+        margin: 20px 0 0 0;
+        padding: 15px 0 1px 30px;
+        font-size: 12px;
+    }
+    }
+
+
+    @media (max-width: 560px) {
+
+.pred {
+    /* color: white; */
+    /* background: rgb(0, 0, 0); */
+    /* height: 120px; */
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+
+}
+
+.pred_button {
+    margin-left: 30px;
+    color: white;
+    background-color: #e67f22;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+}
+    }

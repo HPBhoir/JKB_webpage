@@ -32,10 +32,14 @@ body {
     margin-right: 80px;
 }
 
+.bg_color{
+  background:#0f171c;
+  padding: 0 10px;
+  border-radius: 20px;
+}
 .icon {
-    width: 20px;
-    border-radius: 20px;
-    margin-right: 40px;
+  width: 20px;
+  margin: 10px;
 }
 
 .navbar-right {
@@ -54,11 +58,11 @@ body {
     text-align: center;
     margin-top: 70px;
     font-size: 40px;
-    color: orange;
+    color: #E67F22;
 }
 .para_1{
     text-align: justify;
-    margin: 20px 10% 40px;
+    margin: 20px 2% 40px;
     color: rgb(192, 191, 191);
 }
 
@@ -70,17 +74,12 @@ body {
   }
   
   .box-container {
-    /* flex: 0 0 calc(33.33% - 20px); */
-    /* flex: 1; */
-    /* flex:  0 0 33%; */
     width: 31%;
     margin-bottom: 20px;
     display: grid;
     padding: 5px;
-    /* gap: 5px; */
     grid-template-columns: 30% 70%;
     height: 150px;
-    /* align-items: center; */
     font-size: 12px;
     border-bottom: 1px solid rgb(174, 173, 173);
     border-left: 1px solid rgb(176, 174, 174);
@@ -96,7 +95,7 @@ body {
 
 
   .Name{
-    color: orange;
+    color: #E67F22;
 
   }
 
@@ -109,8 +108,164 @@ body {
   }
 
   .footer{
-    margin: 0 10%;
+    margin: 0 2%;
     color: rgb(192, 191, 191);
     font-size: 14px;
     text-align: justify;
   }
+
+  .P_P{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    color: #E67F22;
+}
+
+.n_para{
+  margin: 0 2%;
+  color: rgb(192, 191, 191);
+  font-size: 14px;
+  text-align: justify;
+}
+
+.big_head{
+  margin: 10px 2%;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+}
+.small_head{
+  margin: 10px 2%;
+  color: rgb(253, 253, 253);
+  font-size: 18px;
+}
+.very_small_head{
+  margin: 10px 2%;
+  color: rgb(253, 253, 253);
+  font-size: 16px;
+}
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  /* position: relative; */
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #17242B;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(46, 70, 83);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: transparent;}
+
+
+.JKB_top{
+  color: white;
+  display: none;
+
+}
+
+@media (max-width: 1020px) {
+  .box-container {
+    /* width: 30%; */
+  }
+  .universal{
+    margin: 0;
+}
+
+}
+
+
+@media (max-width: 900px) {
+  .navbar{display: none;}
+  .JKB_top{display: block;
+      text-align: center;
+      font-size: 40px;}
+      .about{margin-top: 20px;
+        font-size: 30px;}
+
+      .universal{
+        margin: 0;
+    }
+
+
+
+
+
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    .box-container {
+      width: 46%;
+      margin-bottom: 50px;
+      display: grid;
+      padding: 5px;
+      grid-template-columns: 30% 70%;
+      height: 150px;
+      font-size: 12px;
+      border-bottom: 1px solid rgb(174, 173, 173);
+      border-left: 1px solid rgb(176, 174, 174);
+    }
+    
+  
+    .box {
+      width: auto;
+      /* height: auto; */
+      background-color: #2c2a2a;
+      /* border: 2px solid #E67F22; */
+      margin-right: 10px;
+    }
+
+
+  }
+  
+
+
+  @media (max-width: 600px) {
+    .box-container {
+      width: 100%;}
+
+
+  }
+
+
+
+
+
+
